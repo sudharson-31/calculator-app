@@ -1,0 +1,94 @@
+
+@mixin mode_3{
+// Backgrounds
+$B1: hsl(268, 75%, 9%);
+$B2: hsl(268, 71%, 12%);
+$B3: hsl(268, 71%, 12%);
+
+// Keys
+$K1: hsl(281, 89%, 26%);
+$K2: hsl(285, 91%, 52%);
+$K3: hsl(176, 100%, 44%);
+$K4: hsl(177, 92%, 70%);
+$K5: hsl(268, 47%, 21%);
+$K6: hsl(290, 70%, 36%);
+
+//Text
+$T1: hsl(52, 100%, 62%);
+$T2: hsl(198, 20%, 13%);
+$T3: hsl(0, 0%, 100%);
+.C-Header{
+    background-color: $B1;
+}
+.C-H-Title{
+    color: $T1;
+
+}
+.C-H-ThemeSwitcher{
+    color: $T1;
+}
+.C-Display{
+    background-color: $B3;
+    color: $T1;
+}
+.C-Controls{
+    background-color: $B2;
+    .BN{
+        background-color: $K5;
+        box-shadow: $K6 0px 5px 2px;
+        color: $T1;
+    }
+    .BN:hover, .BB:hover{
+        background-color: lighten($K5,20%);
+    }
+     .BB, .Bdel{
+        color: $T3;
+    }
+    .BA{
+        color: $T2;
+    }
+    .Bdel, .BB{
+        background-color: $K1;
+        box-shadow: $K2 0px 5px 2px;
+        font-size: 0.8em;
+    }
+    .BA{
+        background-color: $K3;
+        box-shadow: $K4 0px 5px 2px;
+    }
+    .BA:hover{
+        background-color: lighten($K3,20%);
+    }
+}
+.layer{
+    background-color: $B3;
+}
+#button-1 .knobs:before{
+    background-color: $K3;
+}
+}
+
+
+/* 
+Backgrounds
+
+- Very dark violet (main background): hsl(268, 75%, 9%)
+- Very dark violet (toggle background, keypad background, screen background): hsl(268, 71%, 12%)
+
+Keys
+
+- Dark violet (key background): hsl(281, 89%, 26%)
+- Vivid magenta (key shadow): hsl(285, 91%, 52%)
+
+- Pure cyan (key background, toggle): hsl(176, 100%, 44%)
+- Soft cyan (key shadow): hsl(177, 92%, 70%)
+
+- Very dark violet (key background): hsl(268, 47%, 21%)
+- Dark magenta (key shadow): hsl(290, 70%, 36%)
+
+Text
+
+- Light yellow: hsl(52, 100%, 62%)
+- Very dark blue: hsl(198, 20%, 13%)
+- White (text): hsl(0, 0%, 100%) 
+*/
